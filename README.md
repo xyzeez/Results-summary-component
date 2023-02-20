@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I was able to practice gradient color pattern and also the use of ```hsla``` to reduce the color opacity.
+In this project, I was able to practice gradient color pattern, ```hsla``` to reduce the color opacity and finally the use of local font with ```@font-face```.
 
 ### Continued development
 
