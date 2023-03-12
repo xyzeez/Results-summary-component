@@ -271,7 +271,7 @@
     font-size: 1.125rem;
     font-weight: var(--medium);
     color: var(--white);
-    background-color: var(--gray-blue);
+    background-image: linear-gradient(var(--gray-blue), var(--gray-blue));
     transition: all 0.5s ease;
   }
 
