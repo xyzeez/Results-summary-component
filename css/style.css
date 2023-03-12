@@ -134,7 +134,7 @@
     padding-bottom: 2.5rem;
     text-align: center;
     color: var(--white);
-    border-radius: 0px 0px 35px 35px;
+    border-radius: 0px 0px 2.1875rem 2.1875rem;
     background-image: linear-gradient(var(--slate-blue), var(--royal-blue));
   }
 
@@ -147,8 +147,8 @@
   .result__count {
     display: grid;
     place-content: center;
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     margin: 1.5625rem 0;
     border-radius: 50%;
     background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
@@ -208,7 +208,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.9375rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 
   .summary__listitem-title {
@@ -261,21 +261,37 @@
   }
 
   .btn {
+    position: relative;
     width: 100%;
     align-self: center;
     padding: 0.625rem;
     margin-top: auto;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     text-decoration: none;
     text-align: center;
     font-size: 1.125rem;
     font-weight: var(--medium);
     color: var(--white);
-    background-image: linear-gradient(var(--gray-blue), var(--gray-blue));
+    background-color: var(--gray-blue);
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 3.125rem;
+    background-image: linear-gradient(var(--slate-blue), var(--royal-blue));
+    z-index: -1;
+    opacity: 0;
     transition: all 0.5s ease;
   }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 43.75rem) {
     
     body {
         align-items: center;
@@ -286,7 +302,7 @@
         max-width: 45rem;
         margin: 0 1.5rem;
         overflow: hidden;
-        border-radius: 35px;
+        border-radius: 2.1875rem;
         box-shadow: 
             15px 15px 40px 0px rgba(36,33,202,0.14);
             -webkit-box-shadow: 15px 15px 40px 0px rgba(36,33,202,0.14);
@@ -299,7 +315,7 @@
 
     .result {
       padding: 2.5rem;
-      border-radius: 0px 35px 35px 0px;
+      border-radius: 0px 2.1875rem 2.1875rem 0px;
     }
 
     .result__title {
@@ -307,8 +323,8 @@
     }
 
     .result__count {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
     }
 
     .result__score {
@@ -340,8 +356,11 @@
   @media (hover: hover) {
 
     .btn:hover {
-      background-image: linear-gradient(var(--slate-blue), var(--royal-blue));
       cursor: pointer;
+    }
+
+    .btn:hover::after {
+      opacity: 1;
     }
     
   }
