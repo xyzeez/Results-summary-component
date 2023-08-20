@@ -229,35 +229,35 @@
     color: var(--light-gray-blue);
   }
 
-  .summary__listitem--red {
+  .summary__listitem:nth-child(1) {
     background-color: var(--light-red);
   }
 
-  .summary__listitem--red .summary__listitem-title {
+  .summary__listitem:nth-child(1) .summary__listitem-title {
     color: var(--red);
   }
 
-  .summary__listitem--yellow {
+  .summary__listitem:nth-child(2) {
     background-color: var(--light-yellow);
   }
 
-  .summary__listitem--yellow .summary__listitem-title {
+  .summary__listitem:nth-child(2) .summary__listitem-title {
     color: var(--yellow);
   }
 
-  .summary__listitem--green {
+  .summary__listitem:nth-child(3) {
     background-color: var(--light-green);
   }
 
-  .summary__listitem--green .summary__listitem-title {
+  .summary__listitem:nth-child(3) .summary__listitem-title {
     color: var(--green);
   }
 
-  .summary__listitem--blue {
+  .summary__listitem:nth-child(4) {
     background-color: var(--light-blue);
   }
 
-  .summary__listitem--blue .summary__listitem-title {
+  .summary__listitem:nth-child(4) .summary__listitem-title {
     color: var(--blue);
   }
 
