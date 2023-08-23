@@ -28,7 +28,7 @@ createElement = (ref) => {
     summaryList.append(listItem);
 }
 
-fetch('./data.json')
+fetch('../../data.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(file => {
